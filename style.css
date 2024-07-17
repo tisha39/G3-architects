@@ -139,6 +139,11 @@ text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+ 
+}
+.main-section{
+   padding-left: 80px;
+ 
 }
 .fact-card{
    border: 2px solid rgb(255, 144, 14);
@@ -166,6 +171,50 @@ text-align: center;
 .fact-description{
   max-width:540px ;
 }
+/* <!-- some facts section end  -->   */
+/* sponsors section start  */
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+ 
+}
+
+
+.sponsor-companies{
+  display: grid;
+  grid-template-columns:repeat(5,1fr) ;
+  padding-left: 80px;
+}
+
+.sponsor-companies img{
+  filter:grayscale(100%) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,13 +236,24 @@ text-align: center;
     flex-direction: column;
   }
 
-.team-img-cointainer{
+.team-img-cointainer , 
+.facts-container,
+.sponsor-companies{
   grid-template-columns: repeat(1,1fr);
 }
 .our-feature{
   margin-left: 20px;
 }
 
+.facts-container{
+justify-content: center;
+gap: 24px;
+}
+
+.sponsor-companies{
+  justify-content: center;
+  gap: 50px;
+}
 
 
 
@@ -201,22 +261,22 @@ text-align: center;
 
 
 
-
-
-
-
+}
 
 
 
 /* medium size device  */
- @media screen and (min-widht:576px) and (max-width:992px){
+ @media screen and (min-width:576px) and (max-width:992px){
   .tearm{
     flex-direction: column;
   }
 .our-feature{
   margin: 50px auto;
 }
-
+.sponsor-companies, .facts-container{
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+}
 
  }
 
@@ -239,4 +299,4 @@ text-align: center;
 
 
 
-}
+
